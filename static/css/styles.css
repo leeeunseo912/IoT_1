@@ -108,6 +108,15 @@
   .home__container {
     position: relative;
     left: 5%;
+    font-weight: bold;
+    line-height: 1;
+    animation-name: grow;
+    animation-duration: 1s;/* 애니메이션 시간 */
+  }
+
+  @keyframes grow {
+    from { transform: translateY(10em) }/* 애니메이션 높이 */
+    to { transform: translateY(0) }
   }
 
   .home_main_title{
