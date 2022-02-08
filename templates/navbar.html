@@ -1,0 +1,13 @@
+{% load static %}
+  <link href="{% static 'css/styles.css' rel="stylesheet" %}"/>
+  <div class="navbar">
+    <a class="logo" href="{% url 'main:index' %}">
+      <img src="{% static 'images/logo.png' %}" height="40px">
+    </a>
+    <ul>
+      <li><a href="#">로그인</a></li>
+      <li><a href="#">캠핑장정보</a></li>
+      <li><a href="#">댓글달기</a></li>
+    </ul>
+  </div>
+
