@@ -103,7 +103,7 @@
   .home__img {
     position: absolute;
     left: 0;
-    width: 100%;
+    /* width: 100%; */
     /* height: 100vh;
     object-fit: cover;
     object-position: 83%; */
@@ -159,6 +159,6 @@
   .nav__img{
     position: absolute;
     left: 0;
-    width: 100%;
+    /* width: 100%; */
 
   }
