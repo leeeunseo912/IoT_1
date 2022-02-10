@@ -160,5 +160,9 @@
     position: absolute;
     left: 0;
     /* width: 100%; */
-
   }
+  .nav{
+    right:0;
+  }
+
+
