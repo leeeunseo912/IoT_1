@@ -124,6 +124,7 @@
   .home__container {
     position: relative;
     margin-left: 80px;
+    top : 200px;
     /* font-weight: bold; */
     line-height: 1;
     animation-name: grow;
@@ -185,4 +186,9 @@
     border-radius: 20px;
   }
 
-
+.camping_img{
+  position: absolute;    /*절대값으로 위치를 설정*/
+  left: 850px;    /* x축 */
+  top: 10px;    /* y축 (작성하지 않는다면 원래의 위치로 설정됨 */
+  box-shadow: 5px 5px 10px #000;
+}
