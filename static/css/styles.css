@@ -39,7 +39,7 @@
     text-decoration: none;
     color : white;
     font-style: bold;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 900;
   }
   
@@ -163,6 +163,11 @@
   }
   .nav{
     right:0;
+  }
+  .nav:hover{
+    background-color: #0000ff;
+    padding: 1px 10px;
+    border-radius: 20px;
   }
 
 
