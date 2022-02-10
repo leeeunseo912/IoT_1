@@ -2,6 +2,15 @@
     box-sizing: border-box;
   }
   
+  @font-face {
+    font-family: 'title';
+    src: url('../font/NanumPenScript-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'text';
+  src: url('../font/GamjaFlower-Regular.ttf') format('truetype');
+}
   body {
     margin: 0;
     min-width: 992px;
@@ -39,7 +48,7 @@
     text-decoration: none;
     color : white;
     font-style: bold;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 900;
   }
   
@@ -99,6 +108,9 @@
     margin-left: 10px;
     margin-right: 10px;
   }
+  .home,.navbar{
+    font-family: 'text';
+  }
 
   .home__img {
     position: absolute;
@@ -108,11 +120,11 @@
     object-fit: cover;
     object-position: 83%; */
   }
-
+  
   .home__container {
     position: relative;
     margin-left: 80px;
-    font-weight: bold;
+    /* font-weight: bold; */
     line-height: 1;
     animation-name: grow;
     animation-duration: 1s;/* 애니메이션 시간 */
@@ -124,8 +136,10 @@
   }
 
   .home_main_title{
-    font-size : 80px;
+    font-size : 100px;
     color : white;
+    font-family: 'title';
+
   }
 
   .home_main_data{
