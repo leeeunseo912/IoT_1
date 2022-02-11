@@ -116,7 +116,8 @@
     position: absolute;
     left: 0;
     margin-top:25px;
-    width: 1903px;
+    height: 1126px;
+    overflow:hidden;
     /* height: 100vh;
     object-fit: cover;
     object-position: 83%; */
@@ -176,7 +177,8 @@
   .nav__img{
     position: absolute;
     left: 0;
-    width: 1903px;
+    height: 130px;
+    overflow:hidden;
   }
   .nav{
     right:0;
