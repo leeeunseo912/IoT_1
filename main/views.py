@@ -4,3 +4,7 @@ from django.shortcuts import render
 def index(request):
   
     return render(request, 'main/index.html')
+
+def camping_detail(request):
+  
+    return render(request, 'main/camping_detail.html')

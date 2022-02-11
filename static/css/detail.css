@@ -1,0 +1,58 @@
+    #section1{
+        margin-top: 35px;
+    }
+
+    .camp_intro{width:100%; position:relative; overflow:hidden;}
+	.camp_intro > ul{display:inline-block; overflow:hidden; width:100%;}
+	.camp_intro > ul li.col_03{width: 32%; float:left;}
+	.camp_intro > ul li.img_box{height:235px; margin-left:2%; box-sizing: border-box; border:1px solid #dedede;}
+	.camp_intro > ul li.img_box:first-child{margin-left:0 !important;} 
+	.camp_intro .icon_ul02{margin:10px 0 10px 10px;}
+
+	.camp_intro_txt{width:100%; padding:20px 0; border-top:2px solid #000; border-bottom:1px solid #000; overflow:hidden; margin-top:20px; display:block; clear:both;}
+	.camp_intro_txt > span{font-size:14px; color:#000; display:block; line-height:25px;}
+	.camp_intro_txt > span.date_info{display:block; font-size:13px; color:#888; padding-top:10px;}
+	.camp_intro_txt > span.info_notice{font-size:13px; font-weight:bold;} 
+	.info_notice > span.info_f_red{color:red;}
+
+    
+
+
+    .board_w{width:100%; height:auto; overflow:hidden; border-top:2px solid #000; margin-top:10px;}
+
+ /*List*/
+ 
+ .board_w ul.bd_list{height:auto; overflow:hidden; width:100%; font-size:15px;}
+ .board_w ul.bd_list > li{width:100%; height:auto; overflow:hidden; padding:20px 0; clear:both; border-bottom:1px solid #dedede;}
+ .board_w ul.bd_list > li > a > ul > li{float:left; text-align:center; color:#4d4d4d;}
+ .board_w ul.bd_list > li > a > ul > li.num{width:7%;}
+ .board_w ul.bd_list > li > a > ul > li.con{width:8%;}
+ .board_w ul.bd_list > li > a > ul > li.con > span{width:85%; display:inline-block; height:28px; line-height:28px; font-size:13px; border-radius:5px;}
+	.board_w ul.bd_list > li > a > ul > li.con > span.event{background:#e5204a; color:#fff;  text-align:center;}
+	.board_w ul.bd_list > li > a > ul > li.con > span.event_off{background:#c4c4c4; color:#fff;  text-align:center;}
+	.board_w ul.bd_list > li > a > ul > li.con > span.notice{background:#4761a2; color:#fff;  text-align:center;}
+.board_w ul.bd_list > li > a > ul > li.title{width:72%; padding:0 1.5%;text-align:left; white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;}
+.board_w ul.bd_list > li > a > ul > li.date{float:right;}
+
+.paging_tm{display:none;}
+.paging{width:100%; clear:both; height:auto; margin-top:40px; overflow:hidden;}
+.paging ul{text-align:center;}
+.paging ul li{margin:0 2px;}
+.paging ul li a{width:32px; height:32px; display:block;}
+.paging ul li{display:inline-block;}
+.paging ul li img{vertical-align:middle;}
+.paging ul li.num{width:32px; height:32px; background:url("/img/2018/sub/btn_bg.png") no-repeat; text-align:center; font-size:14px; }
+.paging ul li.num.on{width:32px; height:32px; background:url("../images/btn_bg_on.png") no-repeat; text-align:center; font-size:14px; }
+.paging ul li.num.on a{color:#fff !important;}
+
+.btn_more_w{width:100%; display: block; text-align: center;  margin: 20px 0 0 0;}
+.btn_more_w > button.btn_black{padding:15px 20px; width:320px; box-sizing: border-box; font-size:15px;}
+.btn_more_w > button.btn_white{padding:15px 20px; width:320px; box-sizing: border-box; font-size:15px;}
+
+
+.camping_bigname{
+    font-size: 35px;
+    margin:10px;
+}

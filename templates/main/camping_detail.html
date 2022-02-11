@@ -1,0 +1,130 @@
+{% extends "base.html" %} {% block content %}
+{% load static %}
+<link href="{% static 'css/styles.css'%}" rel="stylesheet" />
+<link href="{% static 'css/detail.css'%}" rel="stylesheet" />
+
+
+
+
+<section id="section1" style="right: 0px">
+    <!--콘텐츠박스-->
+    <div id="cont_inner">
+        <div class="sub_layout layout">
+            <article>
+                <header class="camp_top_info">
+                    <div class="camp_info_box">
+                        <div class="camping_bigname">캠핑장이름</div>
+                        <!--//S:table-->
+                        <div class="cont_tb">
+                            <table class="table">
+                                <colgroup>
+                                    <col style="width: 30%;" />
+                                    <col style="width: 70%;" />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                            <th scope="col">주소</th>
+                                            <td>강원도 평창군 용평면 이승복생가길 160  계방산 오토캠핑장 </td>
+                                        </tr>
+                                    <tr class="camp_call_pcVer">
+                                            <th scope="col">문의처</th>
+                                            <td>
+                                                033-339-9016</td>
+                                        </tr>
+                                    <tr>
+                                            <th scope="col">캠핑장 환경</th>
+                                            <td>숲 / 지자체</td>
+                                        </tr>
+                                    <tr>
+                                            <th scope="col">캠핑장 유형</th>
+                                            <td>일반야영장</td>
+                                        </tr>
+                                    <tr>
+                                            <th scope="col">운영기간</th>
+                                            <td>봄, 여름, 가을, 겨울</td>
+                                        </tr>
+                                    <tr>
+                                            <th scope="col">운영일</th>
+                                            <td>평일+주말</td>
+                                        </tr>
+                                    <tr>
+                                            <th scope="col">홈페이지</th>
+                                            <td><a href="#" target="_BLANK" title="새창열림">홈페이지 바로가기</a></td>
+                                        </tr>
+                                    <tr>
+                                            <th scope="col">예약방법</th>
+                                            <td>온라인실시간예약</td>
+                                        </tr>
+                                    <tr>
+                                            <th scope="col">주변이용가능시설</th>
+                                            <td>계곡 물놀이</td>
+                                        </tr>
+                                    </tbody>
+                            </table>
+                            
+                        </div>
+                        <!--//E:table-->
+
+                    </div>
+
+                </header>
+            </article>
+
+        </div>
+    </div>
+ 
+</section>
+
+
+    <div class="camp_intro">
+        <div class="camping_bigname">후기</div>
+        <p class="bd_total">최근 2건</p>
+        <div class="board_w">
+            <ul class="bd_list">
+                <li><a href="#" target="_BLANK">
+                                    <ul>
+                                        <li class="num">1</li>
+                                        <li class="title">계방산오토캠핑장 패트롤캠퍼 후기</li>
+                                        <li class="w10 date">Mon Jul 20</li>
+                                    </ul>
+                            </a></li>
+                        <li><a href="#" target="_BLANK">
+                                    <ul>
+                                        <li class="num">2</li>
+                                        <li class="title">패트롤캠퍼 활동후기</li>
+                                        <li class="w10 date">Sun May 24</li>
+                                    </ul>
+                            </a></li>
+                        </ul>
+            <!-- 페이징 -->
+            <div class="paging">
+                <ul>
+                    <li><a href="#"><img src="{% static 'images/btn_pre00.png'%}" alt="처음으로"></a></li>
+                    
+                    <li><a href="#"><img src="{% static 'images/btn_pre01.png'%}" alt="이전으로"></a></li>
+                    <li class="num on"><a href="#none">1</a></li>
+                    <li><a href="#"><img src="{% static 'images/btn_next00.png'%}" alt="다음으로"></a></li>
+                    <li><a href="#"><img src="{% static 'images/btn_next01.png'%}" alt="맨끝으로"></a></li>
+
+                </ul>
+            </div>
+            <div class="paging_tm">
+                <ul>
+                    <li class="prev"><a href="#">PREV</a></li>
+                    <li><strong title="현재페이지">1
+                    </strong>/1</li>
+                    <li class="next"><a href="#">NEXT</a></li>
+
+                </ul>
+            </div>
+            <!-- //페이징 -->
+            <!--더보기버튼-->
+            <p class="btn_more_w">
+                <button type="button" class="btn_white" onclick="#">글쓰기</button>
+                <button type="submit" class="btn_black" onclick="#">더보기</button>
+            </p>
+            <!--//더보기버튼-->
+        </div>
+    </div>
+
+{% endblock %}

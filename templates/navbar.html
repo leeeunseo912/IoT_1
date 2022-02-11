@@ -1,5 +1,5 @@
 {% load static %}
-  <link href="{% static 'css/styles.css' rel="stylesheet" %}"/>
+<link href="{% static 'css/styles.css'%}" rel="stylesheet" />
   <div class="navbar">
     <img src="{% static 'images/home2.jpg'%}" alt="" class="nav__img">
     <a class="logo" href="{% url 'main:index' %}">
@@ -7,7 +7,7 @@
     </a>
     <ul>
       <li><a class="nav" href="#">로그인</a></li>
-      <li><a class="nav" href="#">캠핑장정보</a></li>
+      <li><a class="nav" href="{% url 'main:camping_detail' %}">캠핑장정보</a></li>
       <li><a class="nav" href="#">댓글달기</a></li>
     </ul>
   </div>
