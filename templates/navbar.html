@@ -1,14 +1,22 @@
 {% load static %}
 <link href="{% static 'css/styles.css'%}" rel="stylesheet" />
-  <div class="navbar">
+  <div class="navbar border-bottom">
     <img src="{% static 'images/home2.jpg'%}" alt="" class="nav__img">
     <a class="logo" href="{% url 'main:index' %}">
       <img src="{% static 'images/logo.png' %}" height="80px">
+      우리 팀명 넣기
     </a>
     <ul>
-      <li><a class="nav" href="#">로그인</a></li>
-      <li><a class="nav" href="{% url 'main:camping_detail' %}">캠핑장정보</a></li>
-      <li><a class="nav" href="#">댓글달기</a></li>
+      {% if user.is_authenticated %}
+      <a class="nav-link" href="{% url 'common:logout' %}">
+        {{ user.username }} (로그아웃)</a>
+      {% else %}
+      <li><a class="nav" href="{% url 'common:login' %}">로그인</a></li>
+      {% endif %}
+      <li  class = "nav-item">
+        <a class="nav" href="{% url 'main:campinfo' %}">캠핑장정보</a></li>
+      <li class = "nav-item">
+        <a class="nav" href="{% url 'main:camping_detail' %}">댓글달기</a></li>
     </ul>
   </div>
 
