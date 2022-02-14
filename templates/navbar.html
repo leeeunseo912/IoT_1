@@ -7,12 +7,13 @@
       우리 팀명 넣기
     </a>
     <ul>
-      {% if user.is_authenticated %}
-      <a class="nav-link" href="{% url 'common:logout' %}">
-        {{ user.username }} (로그아웃)</a>
-      {% else %}
-      <li><a class="nav" href="{% url 'common:login' %}">로그인</a></li>
-      {% endif %}
+      <li  class = "nav-item">
+        {% if user.is_authenticated %}
+        <a class="nav" href="{% url 'common:logout' %}">
+          {{ user.username }} (로그아웃)</a>
+        {% else %}
+        <li><a class="nav" href="{% url 'common:login' %}">로그인</a></li>
+        {% endif %}
       <li  class = "nav-item">
         <a class="nav" href="{% url 'main:campinfo' %}">캠핑장정보</a></li>
       <li class = "nav-item">
