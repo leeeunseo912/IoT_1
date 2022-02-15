@@ -84,11 +84,11 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', 
-        'NAME': 'iot1',
-        'USER': 'iot1',
-        'PASSWORD': 'iot1',         # iot 사용자의 비밀번호 입력
-        'HOST': '175.211.162.37',   # 데이터베이스의 서버 주소
-        'PORT': ''                  # 데이터베이스의 포트번호, 생략시 디폴트 포트번호
+        'NAME': 'pybo_db',
+        'USER': 'iot',
+        'PASSWORD': '6221',     # iot 사용자의 비밀번호 입력
+        'HOST': 'localhost',      # 데이터베이스의 서버 주소
+        'PORT': '3307'                      # 데이터베이스의 포트번호, 생략시 디폴트 포트번호
     }
 }
 

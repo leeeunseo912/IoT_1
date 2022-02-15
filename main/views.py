@@ -9,25 +9,41 @@ def index(request):
   
     return render(request, 'main/index.html')
 
+def detail(request, comment_id):
+    """
+    후기 내용 출력
+    """
+    comment = get_object_or_404(Comment, pk=comment_id)
+    context = {'comment': comment}
+    return render(request, 'main/comment.html', context)
+
+def comment_index(request):
+    """
+    후기 목록 출력
+    """
+    comment_list = Comment.objects.order_by('-create_date')
+    context = {'comment_list' : comment_list}
+
+    return render(request, 'main/comment.html', context)
+
 # @login_required(login_url='common:login')
 def comment_create(request):
     """
     후기등록
     """
-    # if request.method == 'POST':
-    #     form = CommentForm(request.POST)
-    #     if form.is_valid():
-    #         comment = form.save(commit=False)
-    #         comment.author = request.user
-    #         comment.create_date = timezone.now()
-    #         comment.save()
-    #         return redirect('main: index')
-    # else:
-    #     form = CommentForm()
+    if request.method == 'POST':
+        form = CommentForm(request.POST)
+        if form.is_valid():
+            comment = form.save(commit=False)
+            comment.author = request.user
+            comment.create_date = timezone.now()
+            comment.save()
+            return redirect('main/camping_detail.html')
+    else:
+        form = CommentForm()
     
-    # context = {'form':form}
-    # return render(request, 'main/camping_detail.html', context)
-    return render(request,'main/comment.html')
+    context = {'form':form}
+    return render(request, 'main/comment.html', context)
 
 
 # @login_required(login_url='common:login')

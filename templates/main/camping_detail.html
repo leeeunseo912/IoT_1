@@ -96,6 +96,44 @@
                                     </ul>
                             </a></li>
                         </ul>
+                        <div class="container my-3">
+                            <table class="table table-striped table-hover">
+                              <thead>
+                                <tr class="thead-dark">
+                                  <th style="width:60px">번호</th>
+                                  <th>제목</th>
+                                  <th>글쓴이</th>
+                                  <th style="width.250px">작성일시</th>
+                                </tr>
+                              </thead>
+                          
+                              <tbody>
+                                {% if comment_list %} {% for comment in comment_list %}
+                                <tr>
+                                  <td>{{ comment.id }}</td>
+                                  <td>
+                                    <a href="{% url 'main:detail' comment.id %}"> {{ comment.subject }}</a>
+                                    {% comment %} {% if comment.answer_set.count > 0 %}
+                                    <span class="badge badge-pill badge-primary">{{question.answer_set.count}}
+                                    {% endif%} {% endcomment %}
+                                    </td>
+                                  <td>{{ comment.author.username }}</td> 
+                                  <td>{{ comment.create_date | date:'Y-m-d' }}</td>
+                                </tr>
+                                {% endfor %} {% else %}
+                                <tr>
+                                  <td colspan="3">질문이 없습니다.</td>
+                                </tr>
+                                {% endif %}
+                              </tbody>
+                            </table>
+                          </div>
+                          
+                          </table>
+                          <p class="btn_more_w">
+                            <a href="{% url 'main:comment_create' %}" class = "btn btn-primary"><i class="far fa-edit"></i> 후기 쓰기</a>
+                          </p>
+
             <!-- 페이징 -->
             <div class="paging">
                 <ul>
@@ -119,9 +157,6 @@
             </div>
             <!-- //페이징 -->
             <!--더보기버튼-->
-            <p class="btn_more_w">
-                <a href="{% url 'main:comment_create' %}">글쓰기</a>
-            </p>
             <!--//더보기버튼-->
         </div>
     </div>
